@@ -1,0 +1,13 @@
+intint a == citesteciteste;;
+intint b == citesteciteste;;
+intint nr == 0;;
+
+pentrupentru((intint i == a;; i << b;; i++++))
+{{
+	dacadaca((i %% 2 ==== 0))
+	{{
+		nr++++;;
+	}}
+}}
+
+afiseazaafiseaza nr;;

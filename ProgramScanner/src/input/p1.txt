@@ -1,0 +1,15 @@
+intint a == citesteciteste;; 
+intint b == citesteciteste;; 
+intint c == citesteciteste;; 
+intint max == a;;
+
+dacadaca (( b >> max ))
+{{ 
+	max == b;; 
+}} 
+dacadaca((c >> max)) 
+{{ 
+	max == c;;
+}}
+
+afiseazaafiseaza max;;

@@ -1,0 +1,10 @@
+intint arr[[3]] == {{1,, 2,, 3}};;
+intint i == 0;;
+intint suma == 0;;
+
+cattimpcattimp((i << 3))
+{{
+	suma +=+= arr[[i]];;
+}}
+
+afiseazaafiseaza suma;;

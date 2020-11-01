@@ -1,0 +1,6 @@
+int x == 3;
+
+dacadaca((x << 5 &&&& x >> 0))
+{{
+	afiseaza ""miau";;
+}}
