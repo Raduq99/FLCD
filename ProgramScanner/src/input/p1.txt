@@ -1,15 +1,15 @@
-intint a == citesteciteste;; 
-intint b == citesteciteste;; 
-intint c == citesteciteste;; 
-intint max == a;;
+intint A == citesteciteste;;
+intint B == citesteciteste;;
+intint C == citesteciteste;;
+intint MAX == A;;
 
-dacadaca (( b >> max ))
+dacadaca (( B >> MAX ))
 {{ 
-	max == b;; 
+	MAX == B;;
 }} 
-dacadaca((c >> max)) 
+dacadaca((C >> MAX))
 {{ 
-	max == c;;
+	MAX == C;;
 }}
 
-afiseazaafiseaza max;;
+afiseazaafiseaza MAX;;

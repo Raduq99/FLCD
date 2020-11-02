@@ -66,6 +66,7 @@ public class SymbolTable {
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
+        res.append("Symbol Table. Binary search tree implementation\n");
         this.inorderRecursive(this.root, res);
         return res.toString();
     }

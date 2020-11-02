@@ -29,10 +29,11 @@ public class LexicalScanner {
                 line = input.nextLine();
                 for(String token : this.lookForToken(line)) {
                     String classification = this.classifyToken(token);
+                    //System.out.println(token + "->" + classification + "\n");
                     if(classification.compareTo("keyword") == 0) {
                         pif.add(new Pair<>(token, 0));
                     } else if (classification.compareTo("none") == 0) {
-                        throw new RuntimeException("Lexical error at line: " + lineCount + ". Could not find token: " + token);
+                        throw new RuntimeException("Lexical error at line: " + lineCount + " at token: " + token);
                     } else {
                         int location = this.symbolTable.search(token);
                         if(location == -1) {
@@ -78,9 +79,9 @@ public class LexicalScanner {
     private String classifyToken(String tok) {
         if(this.tokens.contains(tok)) {
             return "keyword";
-        } else if(tok.matches("\\d*.\\d+") || tok.matches("\\d+") || tok.matches("\"\"\\w+\"\"") || tok.matches("''\\w+''")) {
+        } else if(tok.matches("(0\\.0)|([-]?\\d+\\.[1-9]\\d*)") || tok.matches("0|([-]?[1-9]\\d*)") || tok.matches("\"\"[A-Z]+\"\"") || tok.matches("''[A-Z0-9_]''")) {
             return "constant";
-        } else if(tok.matches("\\w+")) {
+        } else if(tok.matches("[A-Z_][A-Z0-9_]*")) {
             return "identifier";
         } else return "none";
     }

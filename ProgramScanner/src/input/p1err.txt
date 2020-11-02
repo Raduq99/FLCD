@@ -1,6 +1,6 @@
-int x == 3;
+intint X == 5--0.1;;
 
-dacadaca((x << 5 &&&& x >> 0))
+dacadaca((X << 5 &&&& X >> 0))
 {{
-	afiseaza ""miau";;
+	afiseazaafiseaza ""MIAU"";;
 }}

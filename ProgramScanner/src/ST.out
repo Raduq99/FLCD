@@ -1,4 +1,5 @@
-a->0
-b->1
-c->2
-max->3
+Symbol Table. Binary search tree implementation
+A->0
+B->1
+C->2
+MAX->3
