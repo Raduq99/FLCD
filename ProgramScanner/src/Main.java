@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try {
             SymbolTable st = new SymbolTable();
-            LexicalScanner scanner = new LexicalScanner(st, "src/input/p1.txt", readTokens());
+            LexicalScanner scanner = new LexicalScanner(st, "src/input/p1err.txt", readTokens());
             scanner.scan();
         } catch (Exception e) {
             e.printStackTrace();

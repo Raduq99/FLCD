@@ -1,6 +1,6 @@
-intint X == 5--0.1;;
+intint x == 5--0.1;;
 
-dacadaca((X << 5 &&&& X >> 0))
+dacadaca((x << 5 &&&& x >> 0))
 {{
 	afiseazaafiseaza ""MIAU"";;
 }}
