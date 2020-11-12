@@ -3,6 +3,7 @@ import javafx.util.Pair;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,8 +40,7 @@ public class Main {
         try {
             FiniteAutomata fa = new FiniteAutomata();
             Scanner in = new Scanner(new File(inFile));
-            in.nextLine(); // jump after comment
-
+            IntStream.range(1, 9).forEach((i) -> in.nextLine());
             Set<String> states;
             Set<String> alphabet;
             Set<String> finalStates;

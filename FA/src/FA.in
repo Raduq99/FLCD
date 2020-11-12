@@ -1,4 +1,11 @@
 This is the order of the input: states, alphabet, transitions, initial state, final state
+state = "state1" | "state2" | ... | "staten"
+state = "symbol1" | "symbol2" | ... | "symboln"
+states= {state} state
+alphabet= {symbol} symbol
+transitions= state symbol state
+initState= state
+final= {state} state
 p q r
 a b
 p a q
