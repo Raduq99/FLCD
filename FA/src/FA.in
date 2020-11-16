@@ -1,11 +1,13 @@
-This is the order of the input: states, alphabet, transitions, initial state, final state
-state = "state1" | "state2" | ... | "staten"
-state = "symbol1" | "symbol2" | ... | "symboln"
-states= {state} state
-alphabet= {symbol} symbol
-transitions= state symbol state
-initState= state
-final= {state} state
+This is the order of the input: states, alphabet, transitions, initial state, final state.
+state = "state1" | "state2" | ... | "staten".
+symbol= "symbol1" | "symbol2" | ... | "symboln".
+states= {state} state.
+alphabet= {symbol} symbol.
+transition= state symbol state.
+transitions= {transition “\n”} .
+initState= state.
+final= {state} state.
+inputFile= states ”\n” alphabet ”\n” transitions initState ”\n” final ”\n”
 p q r
 a b
 p a q

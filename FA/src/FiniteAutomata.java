@@ -62,6 +62,20 @@ public class FiniteAutomata {
         return true;
     }
 
+    public boolean checkSequence(Queue<String> seq) {
+        String currentState = initialState;
+        while(!finalStates.contains(currentState)) {
+            if(!alphabet.contains(seq.peek()))
+                throw new RuntimeException("Sequence not from alphabet!");
+            List<String> resState = transitions.get(new TransitionParams(currentState, seq.peek()));
+            if(resState != null) {
+                currentState = resState.get(0);
+                seq.remove();
+            }
+        }
+        return seq.size() == 0;
+    }
+
     @Override
     public String toString() {
         StringBuilder trans = new StringBuilder();
